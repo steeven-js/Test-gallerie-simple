@@ -158,9 +158,19 @@ body {
   width: 80px;
 }
 
-@media (max-width: 768px)  {
+@media (max-width: 728px)  {
   .container-gallerie {
-    width: 350px;
+    width: 400px;
+}
+
+.row {
+  display: none;
+}
+}
+
+@media (max-width: 425px)  {
+  .container-gallerie {
+    width: 300px;
 }
 
 .row {
