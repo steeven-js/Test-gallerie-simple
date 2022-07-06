@@ -21,7 +21,7 @@ body {
   
   /* Position the image container (needed to position the left and right arrows) */
   .container {
-    width: 500px;
+    max-width: 500px;
 
     position: relative;
     display: flex;
