@@ -12,6 +12,10 @@ body {
     flex-direction: column;
 
     margin: 0;
+
+    background: #2b5876;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
   
   
@@ -33,16 +37,25 @@ body {
   }
 
   .container-gallerie {
-    max-width: 500px;
+    width: 500px;
 
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 
     margin: 0 auto;
   }
+
+  .mySlides-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: red 1px solid;
+    padding: 10px;
+    background-color: aliceblue;
+}
   
   /* Hide the images by default */
   .mySlides {
@@ -72,19 +85,21 @@ body {
     color: white;
     font-weight: bold;
     font-size: 20px;
-    border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
+
+    z-index: 2;
   }
   
   /* Position the "next button" to the right */
   .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 0 3px 3px 0;
   }
 
   .prev {
     left: 0;
+    border-radius: 3px 0 0 3px;
   }
   
   /* On hover, add a black background color with a little bit see-through */
@@ -108,6 +123,7 @@ body {
     background-color: #222;
     padding: 2px 16px;
     color: white;
+    width: 100%;
   }
   
   .row:after {
@@ -118,9 +134,8 @@ body {
   
   /* Six columns side by side */
   .column {
-    float: left;
-    width: 16.66%;
-  }
+    margin: 10px;
+}
   
   /* Add a transparency effect for thumnbail images */
   .demo {
@@ -131,3 +146,14 @@ body {
   .demo:hover {
     opacity: 1;
   }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.row img {
+  width: 80px;
+}
