@@ -66,6 +66,7 @@ body {
 
   .mySlides img {
     height: 100%;
+    width: 100%;
   }
   
   /* Add a pointer when hovering over the thumbnail images */
@@ -121,7 +122,6 @@ body {
   .caption-container {
     text-align: center;
     background-color: #222;
-    padding: 2px 16px;
     color: white;
     width: 100%;
   }
@@ -156,4 +156,10 @@ body {
 
 .row img {
   width: 80px;
+}
+
+@media (max-width: 768px)  {
+  .container-gallerie {
+    width: 350px;
+}
 }
