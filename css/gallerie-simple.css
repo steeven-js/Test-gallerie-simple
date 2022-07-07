@@ -159,9 +159,9 @@ body {
 }
 
 @media (max-width: 728px)  {
-  .container-gallerie {
+  /* .container-gallerie {
     width: 400px;
-}
+} */
 
 .row {
   display: none;
@@ -169,9 +169,9 @@ body {
 }
 
 @media (max-width: 425px)  {
-  .container-gallerie {
+  /* .container-gallerie {
     width: 300px;
-}
+} */
 
 .row {
   display: none;
