@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
-    font-family: Arial;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
 
 
     display: flex;
@@ -24,7 +28,7 @@ body {
   }
   
   /* Position the image container (needed to position the left and right arrows) */
-  .container {
+  .clg-container {
     max-width: 500px;
 
     position: relative;
@@ -34,6 +38,21 @@ body {
     align-items: center;
 
     margin: 0 auto;
+  }
+
+  .clg-title {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: #DEB992 1px solid;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .clg-title h1 {
+    color: #DEB992;
+    font-size: 1.1rem;
+    font-weight: 200;
+    text-align: center;
   }
 
   .container-gallerie {
@@ -52,7 +71,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    border: red 1px solid;
+    /* border: red 1px solid; */
     padding: 10px;
     background-color: aliceblue;
 }
@@ -79,11 +98,12 @@ body {
   .next {
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 170px;
     width: auto;
     padding: 16px;
     margin-top: -50px;
-    color: white;
+    color: #001f33;
+    background-color: #E1F2F7;
     font-weight: bold;
     font-size: 20px;
     user-select: none;
@@ -107,6 +127,9 @@ body {
   .prev:hover,
   .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
+    background-color: #001f33;
+    color: #E1F2F7;
+    
   }
   
   /* Number text (1/3 etc) */
@@ -157,6 +180,199 @@ body {
 .row img {
   width: 80px;
 }
+
+/* LIENS Avant la gallerie*/
+
+.clg-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.clg-nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px;
+
+  font-size: 0.9rem;
+}
+
+.clg-nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* width: 160px; */
+
+  text-decoration: none;
+  color: #001f33;
+  background-color: #E1F2F7;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 0px 5px;
+
+}
+
+.clg-nav a:hover {
+  background-color: #001f33;
+  color: #E1F2F7;
+}
+
+.clg-nav-btn i {
+  padding: 0px 5px;
+}
+
+/* ************************************************************************************************************************************ */
+/* ***** 1024px - 770px DEBUT Tablette L***** */
+@media (max-width: 1024px) and (min-width: 770px) {
+  .clg-nav p {
+    display: none;
+  }
+
+  .clg-nav .clg-nav-btn {
+    margin: 0px 50px;  
+  }
+    
+
+  .clg-nav a {
+    width: 50px;
+    height: 50px;
+  }
+
+}
+/* ***** 1024px - 770px FIN Tablette L***** */
+
+/* ***** 769px - 427px DEBUT Tablette S***** */
+@media (max-width: 769px) and (min-width: 427px) {
+  .clg-nav p {
+    display: none;
+  }
+
+  .clg-nav .clg-nav-btn {
+    margin: 0px 50px;  
+  }
+    
+
+  .clg-nav a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .row {
+    display: none;
+  }
+}
+/* ***** 769px - 427px FIN Tablette S***** */
+
+/* ***** 426px - 377px DEBUT Mobile-L ***** */
+@media (max-width: 426px) and (min-width: 377px) {
+  .clg-nav p {
+    display: none;
+  }
+
+  .clg-nav .clg-nav-btn {
+    margin: 0px 50px;  
+  }
+    
+
+  .clg-nav a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .row {
+    display: none;
+  }
+}
+/* ***** 426px - 377px FIN Mobile-L ***** */
+
+/* ***** 376px - 321px DEBUT Mobile-M ***** */
+@media (max-width: 376px) and (min-width: 321px) {
+  .clg-nav p {
+    display: none;
+  }
+
+  .clg-nav .clg-nav-btn {
+    margin: 0px 50px;  
+  }
+    
+
+  .clg-nav a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .row {
+    display: none;
+  }
+}
+/* ***** 375px - 321px FIN Mobile-M ***** */
+
+/* ***** 320px DEBUT Mobile-S ***** */
+@media (max-width: 321px) {
+  .clg-nav p {
+    display: none;
+  }
+
+  .clg-nav .clg-nav-btn {
+    margin: 0px 50px;  
+  }
+    
+
+  .clg-nav a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .row {
+    display: none;
+  }
+}
+/* ***** 320px FIN ***** */
+
+/* ************************************************************************************************************************************ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 728px)  {
   /* .container-gallerie {
