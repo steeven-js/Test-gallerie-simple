@@ -5,176 +5,176 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
 
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-    margin: 0;
+  margin: 0;
 
-    background: #2b5876;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
+  background: #2b5876;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
   
   
-  img {
+img {
     vertical-align: middle;
-  }
+}
   
   /* Position the image container (needed to position the left and right arrows) */
 #challenge-details .clg-container {
-    max-width: 500px;
+  max-width: 500px;
 
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    margin: 0 auto;
-  }
+  margin: 0 auto;
+}
 
-  .clg-title {
-    padding: 10px;
-    margin-bottom: 20px;
-    border-bottom: #DEB992 1px solid;
-    flex-direction: column;
-    width: 100%;
-  }
+#challenge-details  .clg-title {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-bottom: #DEB992 1px solid;
+  flex-direction: column;
+  width: 100%;
+}
   
-  .clg-title h1 {
-    color: #DEB992;
-    font-size: 1.1rem;
-    font-weight: 200;
-    text-align: center;
-  }
+#challenge-details .clg-title h1 {
+  color: #DEB992;
+  font-size: 1.1rem;
+  font-weight: 200;
+  text-align: center;
+}
 
-  .container-gallerie {
-    width: 500px;
+#challenge-details .container-gallerie {
+  width: 500px;
 
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    margin: 0 auto;
-  }
+  margin: 0 auto;
+}
 
-  .mySlides-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    /* border: red 1px solid; */
-    padding: 10px;
-    background-color: aliceblue;
+#challenge-details  .mySlides-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* border: red 1px solid; */
+  padding: 10px;
+  background-color: aliceblue;
 }
   
   /* Hide the images by default */
-  .mySlides {
-    display: none;
+  #challenge-details .mySlides {
+  display: none;
 
-    height: 300px;
-  }
+  height: 300px;
+}
 
-  .mySlides img {
-    height: 100%;
-    width: 100%;
-  }
+  #challenge-details .mySlides img {
+  height: 100%;
+  width: 100%;
+}
   
   /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
+  #challenge-details .cursor {
+  cursor: pointer;
+}
   
   /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 170px;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: #001f33;
-    background-color: #E1F2F7;
-    font-weight: bold;
-    font-size: 20px;
-    user-select: none;
-    -webkit-user-select: none;
+  #challenge-details .prev,
+  #challenge-details  .next {
+  cursor: pointer;
+  position: absolute;
+  top: 170px;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #001f33;
+  background-color: #E1F2F7;
+  font-weight: bold;
+  font-size: 20px;
+  user-select: none;
+  -webkit-user-select: none;
 
-    z-index: 2;
-  }
+  z-index: 2;
+}
   
   /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 0 3px 3px 0;
-  }
+  #challenge-details .next {
+  right: 0;
+  border-radius: 0 3px 3px 0;
+}
 
-  .prev {
-    left: 0;
-    border-radius: 3px 0 0 3px;
-  }
+  #challenge-details  .prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
   
   /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    background-color: #001f33;
-    color: #E1F2F7;
+  #challenge-details .prev:hover,
+  #challenge-details  .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #001f33;
+  color: #E1F2F7;
     
-  }
+}
   
   /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
+  #challenge-details .numbertext {
+  color: #DEB992;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 15px;
+  position: absolute;
+  top: 0px;
+}
   
   /* Container for image text */
-  .caption-container {
-    text-align: center;
-    background-color: #222;
-    color: white;
-    width: 100%;
-  }
+  #challenge-details  .caption-container {
+  text-align: center;
+  background-color: #222;
+  color: white;
+  width: 100%;
+}
   
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+#challenge-details .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
   
   /* Six columns side by side */
 #challenge-details .column {
-    margin: 10px;
+  margin: 10px;
 }
   
   /* Add a transparency effect for thumnbail images */
 #challenge-details .demo {
-    opacity: 0.6;
-  }
+  opacity: 0.6;
+}
   
 #challenge-details .active,
 #challenge-details .demo:hover {
-    opacity: 1;
-  }
+  opacity: 1;
+}
 
 #challenge-details .row {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-
 }
 
 #challenge-details .row img {
@@ -302,7 +302,6 @@ body {
     margin: 0px 30px;  
   }
     
-
   #challenge-details .clg-nav a {
     width: 50px;
     height: 50px;
@@ -333,7 +332,6 @@ body {
     margin: 0px 20px;  
   }
     
-
   #challenge-details .clg-nav a {
     width: 50px;
     height: 50px;
@@ -353,8 +351,8 @@ body {
   }
 
   #challenge-details .container-gallerie {
-  width: 100%;
-}
+    width: 100%;
+  }
 
   #challenge-details .clg-nav p {
     display: none;
@@ -364,7 +362,6 @@ body {
     margin: 0px 20px;  
   }
     
-
   #challenge-details .clg-nav a {
     width: 50px;
     height: 50px;
@@ -395,7 +392,6 @@ body {
     margin: 0px 20px;  
   }
     
-
   #challenge-details .clg-nav a {
     width: 50px;
     height: 50px;
@@ -404,6 +400,7 @@ body {
   #challenge-details .row {
     display: none;
   }
+
 }
 /* ***** 320px FIN ***** */
 
