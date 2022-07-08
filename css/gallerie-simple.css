@@ -28,7 +28,7 @@ body {
   }
   
   /* Position the image container (needed to position the left and right arrows) */
-  .clg-container {
+#challenge-details .clg-container {
     max-width: 500px;
 
     position: relative;
@@ -156,41 +156,41 @@ body {
   }
   
   /* Six columns side by side */
-  .column {
+#challenge-details .column {
     margin: 10px;
 }
   
   /* Add a transparency effect for thumnbail images */
-  .demo {
+#challenge-details .demo {
     opacity: 0.6;
   }
   
-  .active,
-  .demo:hover {
+#challenge-details .active,
+#challenge-details .demo:hover {
     opacity: 1;
   }
 
-  .row {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+#challenge-details .row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 
 }
 
-.row img {
+#challenge-details .row img {
   width: 80px;
 }
 
 /* LIENS Avant la gallerie*/
 
-.clg-nav {
+#challenge-details .clg-nav {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.clg-nav-btn {
+#challenge-details .clg-nav-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,7 +199,7 @@ body {
   font-size: 0.9rem;
 }
 
-.clg-nav a {
+#challenge-details .clg-nav a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -215,28 +215,67 @@ body {
 
 }
 
-.clg-nav a:hover {
+#challenge-details .clg-nav a:hover {
   background-color: #001f33;
   color: #E1F2F7;
 }
 
-.clg-nav-btn i {
+#challenge-details .clg-nav-btn i {
   padding: 0px 5px;
+}
+
+/* LIENS GITHUB DEBUT */
+
+#challenge-details .clg-card-body-code,
+#challenge-details .clg-card-body-page {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  margin: 1rem;
+} 
+
+#challenge-details .clg-info-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#challenge-details .clg-info-btn a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+  width: 100%;
+  background-color: #E1F2F7;
+  color: #001f33;
+}
+
+#challenge-details .clg-info-btn a:hover {
+  background-color: #001f33;
+  color: #E1F2F7;
+}
+
+/* LIENS GITHUB FIN */
+
+#challenge-details .scroll-up {
+  position: fixed;
+  right: 10.5%;
+  bottom: 10%;
+  cursor: pointer;
 }
 
 /* ************************************************************************************************************************************ */
 /* ***** 1024px - 770px DEBUT Tablette L***** */
 @media (max-width: 1024px) and (min-width: 770px) {
-  .clg-nav p {
+  #challenge-details .clg-nav p {
     display: none;
   }
 
-  .clg-nav .clg-nav-btn {
+  #challenge-details .clg-nav .clg-nav-btn {
     margin: 0px 50px;  
   }
     
 
-  .clg-nav a {
+  #challenge-details .clg-nav a {
     width: 50px;
     height: 50px;
   }
@@ -246,21 +285,30 @@ body {
 
 /* ***** 769px - 427px DEBUT Tablette S***** */
 @media (max-width: 769px) and (min-width: 427px) {
-  .clg-nav p {
+  #challenge-details .clg-container {
+    width: 300px;
+    overflow: hidden;
+  }
+
+  #challenge-details .container-gallerie {
+  width: 100%;
+  }
+
+  #challenge-details .clg-nav p {
     display: none;
   }
 
-  .clg-nav .clg-nav-btn {
-    margin: 0px 50px;  
+  #challenge-details .clg-nav .clg-nav-btn {
+    margin: 0px 30px;  
   }
     
 
-  .clg-nav a {
+  #challenge-details .clg-nav a {
     width: 50px;
     height: 50px;
   }
 
-  .row {
+  #challenge-details .row {
     display: none;
   }
 }
@@ -268,21 +316,30 @@ body {
 
 /* ***** 426px - 377px DEBUT Mobile-L ***** */
 @media (max-width: 426px) and (min-width: 377px) {
-  .clg-nav p {
+  #challenge-details .clg-container {
+    width: 300px;
+    overflow: hidden;
+  }
+
+  #challenge-details .container-gallerie {
+  width: 100%;
+  }
+
+  #challenge-details .clg-nav p {
     display: none;
   }
 
-  .clg-nav .clg-nav-btn {
-    margin: 0px 50px;  
+  #challenge-details .clg-nav .clg-nav-btn {
+    margin: 0px 20px;  
   }
     
 
-  .clg-nav a {
+  #challenge-details .clg-nav a {
     width: 50px;
     height: 50px;
   }
 
-  .row {
+  #challenge-details .row {
     display: none;
   }
 }
@@ -290,21 +347,30 @@ body {
 
 /* ***** 376px - 321px DEBUT Mobile-M ***** */
 @media (max-width: 376px) and (min-width: 321px) {
-  .clg-nav p {
+  #challenge-details .clg-container {
+    max-width: 300px;
+    overflow: hidden;
+  }
+
+  #challenge-details .container-gallerie {
+  width: 100%;
+}
+
+  #challenge-details .clg-nav p {
     display: none;
   }
 
-  .clg-nav .clg-nav-btn {
-    margin: 0px 50px;  
+  #challenge-details .clg-nav .clg-nav-btn {
+    margin: 0px 20px;  
   }
     
 
-  .clg-nav a {
+  #challenge-details .clg-nav a {
     width: 50px;
     height: 50px;
   }
 
-  .row {
+  #challenge-details .row {
     display: none;
   }
 }
@@ -312,21 +378,30 @@ body {
 
 /* ***** 320px DEBUT Mobile-S ***** */
 @media (max-width: 321px) {
-  .clg-nav p {
+  #challenge-details .clg-container {
+    max-width: 300px;
+    overflow: hidden;
+  }
+
+  #challenge-details .container-gallerie {
+  width: 100%;
+  }
+
+  #challenge-details .clg-nav p {
     display: none;
   }
 
-  .clg-nav .clg-nav-btn {
-    margin: 0px 50px;  
+  #challenge-details .clg-nav .clg-nav-btn {
+    margin: 0px 20px;  
   }
     
 
-  .clg-nav a {
+  #challenge-details .clg-nav a {
     width: 50px;
     height: 50px;
   }
 
-  .row {
+  #challenge-details .row {
     display: none;
   }
 }
